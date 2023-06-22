@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://thymeleaf.org"
-      xmlns:layout = "http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate = "layout"
-      lang="">
+<html xmlns:th="http://thymeleaf.org">
+      
 <head>
 <meta charset="utf-8">
 <title>authentification</title>
@@ -15,14 +13,14 @@
 			<div class="container">			
 				<div class="card">
 					<div class="car-header bg-primary p-3">authentification</div>
-						<form th:action="@{}"method="post">
+						<form th:action="@{/Contact}"method="post">
 							<div class = "form-group">
 								<label class="control-label">Prénom</label>
-								<input class="form-control" type="text" name="firstName">
+								<input class="form-control" type="text" name="prenom">
 							</div>
 							<div class = "form-group">
 								<label class="control-label">Nom</label>
-								<input class="form-control" type="text" name="lastName">
+								<input class="form-control" type="text" name="nom">
 							</div>
 							<div>
 							<button type="submit" value="save" class="btn btn-primary m-3">Save</button>
